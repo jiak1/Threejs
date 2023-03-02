@@ -1,16 +1,25 @@
 {
-    "name": "CGLabs",
-    "version": "1.0.0",
-    "description": "",
-    "main": "bounce.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "@types/three": "^0.125.3",
-        "three-mtl-loader": "^1.0.2"
-    }
+  "name": "cglabs",
+  "version": "1.0.0",
+  "description": "* Download and extract Three JS package from: https://threejs.org/\r * Create a folder called CGLabs\r * Open that folder in vscode and create a subfolder called 'js'\r * Copy 'three.js' from the 'ThreeJS/build' folder into 'js'\r * Create index.html in CGLabs [by default vscode uses emmet to generate html snipets]\r * Download 'Live Server extension' in vs code [live server provides local server live-runtime for static apps]\r * Download Javascript ES6/ES7 extension\r * Download Javascript Babel extension\r * Create lab for each lab to develop threejs apps inside the labs folder\r * Insert the labs js scripts into index.html and load using live server",
+  "main": "bounce.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/three": "^0.125.3",
+    "three-mtl-loader": "^1.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Georges034302/CGLabs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Georges034302/CGLabs/issues"
+  },
+  "homepage": "https://github.com/Georges034302/CGLabs#readme"
 }

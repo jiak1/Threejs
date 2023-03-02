@@ -1,5 +1,28 @@
-//Define a function to animate the earth object to spin at 0.005 speed
+/*function animate() {
+	earth.rotation.x += 0.02;
+	earth.rotation.y += 0.03;
+	requestAnimationFrame(animate);
+	renderer.render(scene, camera);
+}*/
 
+function animate_earth() {
+	earth.rotation.y += speed
+}
 
-//Define a function to animate the moon object to rotate around the earth
-//Rotation positions x and y are determined using the distance from earth multiplied by cos and sin of alpha angle
+const d = 5;
+var alpha = 0;
+var dalpha = 2 * Math.PI / 1000
+function animate_moon() {
+	alpha += dalpha
+	moon.position.y = 1;
+	moon.position.x = d * Math.sin(alpha)
+	moon.position.z = d * Math.cos(alpha)
+}
+
+var speed = 0.005;
+function animate() {
+	animate_earth()
+	animate_moon()
+	requestAnimationFrame(animate);
+	renderer.render(scene, camera);
+}
