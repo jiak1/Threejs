@@ -1,8 +1,21 @@
-/* global THREE, cube, scene, camera, renderer */
+/*function animate() {
+	earth.rotation.x += 0.02;
+	earth.rotation.y += 0.03;
+	requestAnimationFrame(animate);
+	renderer.render(scene, camera);
+}*/
 
-const speed = 0.01;
+var speed = 0.005;
+function rotate(obj) {
+	obj.rotation.x += speed
+	obj.rotation.z += speed
+}
 
-//Define a function that rotates any object at a speed
-
-
-//Define a function that animates each cube object in the group
+function animate() {
+	for (let i = 0; i < n; i++) {
+		rotate(cubes[i])
+	}
+	group.rotation.y += speed
+	requestAnimationFrame(animate);
+	renderer.render(scene, camera);
+}
